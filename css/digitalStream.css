@@ -1,0 +1,86 @@
+.background {
+	background-color: #181818;
+	background: #181818;
+	height: 100vh;
+	width: 100vw;
+}
+
+.font-color1 {
+	color: #b3b3b3;
+}
+.font-color2 {
+	color: #404040;
+}
+
+.back-color1 {
+	background-color: #b3b3b3;
+}
+.back-color2 {
+	background-color: #404040;
+}
+
+.time-block {
+	text-transform: uppercase;
+	font-size: 8vw;
+	padding: 50px 50px 0 50px;
+}
+
+.date-block {
+	text-transform: uppercase;
+	font-size: 4vw;
+	margin-top: -50px;
+	padding-left: 60px;
+}
+
+.number-stream {
+	margin-top: 55vh;
+	padding-bottom: 10px;
+	height: 2.5vw;
+	font-size: 1.8vw;
+	word-wrap: none;
+	overflow: hidden;
+	opacity: 50%;
+}
+.number-stream span {
+	margin-left: 5px;
+}
+
+.unit-color-0 {
+	color: #ff1744;
+}
+
+.unit-color-1 {
+	color: #e65100;
+}
+
+.unit-color-2 {
+	color: #f9a825;
+}
+
+.unit-color-3 {
+	color: #fdd835;
+}
+
+.unit-color-4 {
+	color: #43a047;
+}
+
+.unit-color-5 {
+	color: #006064;
+}
+
+.unit-color-6 {
+	color: #26c6da;
+}
+
+.unit-color-7 {
+	color: #03a9f4;
+}
+
+.unit-color-8 {
+	color: #0d47a1;
+}
+
+.unit-color-9 {
+	color: #1a237e;
+}

@@ -48,7 +48,7 @@ function manageDate() {
 			UTCDate += 'SAT';
 			break;
 	}
-	UTCDate += ', ' + date.getUTCDay() + ' ';
+	UTCDate += ', ' + date.getUTCDate() + ' ';
 	switch (date.getUTCMonth()) {
 		case 0:
 			UTCDate += 'JAN';

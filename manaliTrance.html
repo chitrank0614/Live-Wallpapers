@@ -1,0 +1,118 @@
+<html>
+	<head>
+		<title>Heaven Effect</title>
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+			* {
+				font-family: 'Noto Sans JP', sans-serif;
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			.banner {
+				position: relative;
+				height: 100vh;
+				width: 100%;
+				background: url(images/manaliTrance.jpg);
+				background-size: cover;
+				background-position: bottom;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			.banner #text {
+				position: relative;
+				font-size: 12em;
+				color: #fff;
+			}
+			.banner .clouds {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+				pointer-events: none;
+			}
+			.banner .clouds img {
+				position: absolute;
+				bottom: 0;
+				max-width: 100%;
+				filter: grayscale(100%);
+				animation: animate calc(3s * var(--i)) linear infinite;
+			}
+
+			@keyframes animate {
+				0% {
+					opacity: 0.1;
+					transform: scale(1);
+				}
+				25%,
+				75% {
+					opacity: 0.5;
+				}
+
+				100% {
+					opacity: 0.1;
+					transform: scale(3);
+				}
+			}
+			section {
+				position: relative;
+				padding: 75px 100px;
+			}
+			section h2 {
+				position: relative;
+				font-size: 2.5em;
+				margin-bottom: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="banner">
+			<h2 id="text"></h2>
+			<div class="clouds">
+				<img src="images/cloud1.png" style="--i: 1" />
+				<img src="images/cloud2.png" style="--i: 2" />
+				<img src="images/cloud3.png" style="--i: 3" />
+				<img src="images/cloud4.png" style="--i: 4" />
+				<img src="images/cloud5.png" style="--i: 5" />
+				<img src="images/cloud1.png" style="--i: 10" />
+				<img src="images/cloud2.png" style="--i: 9" />
+				<img src="images/cloud3.png" style="--i: 8" />
+				<img src="images/cloud4.png" style="--i: 7" />
+				<img src="images/cloud5.png" style="--i: 6" />
+			</div>
+		</div>
+		<section>
+			<h2>Realistic Clouds Outwards</h2>
+			<p>
+				History, Purpose and Usage Lorem ipsum, or lipsum as it is sometimes
+				known, is dummy text used in laying out print, graphic or web designs.
+				The passage is attributed to an unknown typesetter in the 15th century
+				who is thought to have scrambled parts of Cicero's De Finibus Bonorum et
+				Malorum for use in a type specimen book. It usually begins with: “Lorem
+				ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+				incididunt ut labore et dolore magna aliqua.” The purpose of lorem ipsum
+				is to create a natural looking block of text (sentence, paragraph, page,
+				etc.) that doesn't distract from the layout. A practice not without
+				controversy, laying out pages with meaningless filler text can be very
+				useful when the focus is meant to be on design, not content. The passage
+				experienced a surge in popularity during the 1960s when Letraset used it
+				on their dry-transfer sheets, and again during the 90s as desktop
+				publishers bundled the text with their software. Today it's seen all
+				around the web; on templates, websites, and stock designs. Use our
+				generator to get your own, or read on for the authoritative history of
+				lorem ipsum.
+			</p>
+		</section>
+
+		<script type="text/javascript">
+			let text = document.getElementById('text');
+			window.addEventListener('scroll', function () {
+				let value = window.scrollY;
+				text.style.marginBottom = value * 2 + 'px';
+			});
+		</script>
+	</body>
+</html>
